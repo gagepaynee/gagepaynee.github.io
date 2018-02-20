@@ -1,0 +1,54 @@
+body {
+    font-family: 'Josefin Slab', serif;
+}
+.nav {
+    padding-top: 30px;
+    font-size: 24px;
+    padding-left: 30px;
+}
+.nav a {
+    color: #272d2d;
+}
+#section1 {
+    background-color: #Edf5fc;
+}
+#section2 {
+    background-color: #B8c5d6;
+}
+#section3 {
+    background-color:#a39ba8;
+}
+#section4 {
+    background-color: #23ce6b;
+}
+.nav-pills .nav-link.active,.nav-pills .show > .nav-link {
+    background-color: rgba(217, 223, 238, 0.1);
+    color: #272d2d;
+    -webkit-transition: 1s; /* Safari */
+    transition: 1s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bg {
+    height: 800px;
+}
+
+.break {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: 50px;
+}
+
+@keyframes first {
+    from {transform: scale(2,2); opacity: 0;}
+    to {transform: scale(1,1); opacity: 1;}
+}
+h1 {
+    font-size: 90px;
+    font-weight: bold;
+    animation-name: first;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+#description {
+    font-size: 24px;
+}
