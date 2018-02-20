@@ -12,7 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -20,22 +21,22 @@
 
     <ul class="nav text-left nav-pills fixed-top" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" data-toggle="pill" href="#section1">Home</a>
+            <a id="homenav" class="nav-link active" href="#home">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="#section2">About</a>
+            <a id="aboutnav" class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="#section3">Projects</a>
+            <a id="projectsnav" class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" data-toggle="pill" href="#section4">Contact</a>
+            <a id="contactnav" class="nav-link" href="#contact">Contact</a>
         </li>
     </ul> 
 
 
     
-    <div class="bg" id="section1">
+    <div class="bg" id="home">
         <div class="row" style="height: 30%"></div>
         <div class="row">
             <div class="col-3"></div>
@@ -45,22 +46,45 @@
                     <li>Software Engineer</li>
                     <li>Web Developer</li>
                 </ul>
+                <hr>
+                <div class="social-media">
+                    <a href="https://github.com/gagepaynee" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/gage-payne-2765a1141/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:gage_payne37@yahoo.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
             <div class="col-3"></div>
         </div>
     </div>
     <div class="break"></div>
-    <div class="bg" id="section2">
+    <div class="bg" id="about">
         
     </div>
     <div class="break"></div>
-    <div class="bg" id="section3">
+    <div class="bg" id="projects">
         
     </div>
     <div class="break"></div>
-    <div class="bg" id="section4">
+    <div class="bg" id="contact">
         
     </div>
-  <script src="js/scripts.js"></script>
+  <script>
+        $(document).ready(function () {
+            function scroll(a) {
+                $('html, body').animate({
+                    'scrollTop': $(a).offset().top - ($(window).height() - $(a).outerHeight(true) ) / 2
+                }, 1500);
+                return false;
+            }
+
+            $(".nav-link").click(function()
+            {
+                clickedID = $(this).attr("id");
+                change = "#" + (clickedID.slice(0,-3));
+                scroll(change);
+                
+            })
+        })
+  </script>
 </body>
 </html>

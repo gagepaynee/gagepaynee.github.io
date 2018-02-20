@@ -9,16 +9,16 @@ body {
 .nav a {
     color: #272d2d;
 }
-#section1 {
+#home {
     background-color: #Edf5fc;
 }
-#section2 {
+#about {
     background-color: #B8c5d6;
 }
-#section3 {
+#projects {
     background-color:#a39ba8;
 }
-#section4 {
+#contact {
     background-color: #23ce6b;
 }
 .nav-pills .nav-link.active,.nav-pills .show > .nav-link {
@@ -45,10 +45,29 @@ body {
 h1 {
     font-size: 90px;
     font-weight: bold;
-    animation-name: first;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
 }
 #description {
     font-size: 24px;
+}
+.smallSwirl {
+    height: 50px;
+    width: 50px;
+}
+.centerStuff {
+    display: block;
+}
+.bigIcon {
+    font-size: 500px;
+}
+.social-media {
+    display: inline-flex;
+    font-size: 30px;
+}
+div.social-media a {
+    padding-right: 10px;
+    color:#272d2d;
+}
+
+div.social-media a:hover {
+    color: #272d2d;
 }
