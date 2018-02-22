@@ -40,25 +40,105 @@
         <div class="row" style="height: 30%"></div>
         <div class="row">
             <div class="col-3"></div>
-            <div class="col-6 text-center">
+            <div class="col-6">
+                <center>
                 <h1>Gage Payne</h1>
-                <ul id="description" class="text-center">
+            
+                <ul id="description">
                     <li>Software Engineer</li>
                     <li>Web Developer</li>
                 </ul>
+        
                 <hr>
                 <div class="social-media">
                     <a href="https://github.com/gagepaynee" target="_blank"><i class="fab fa-github-square"></i></a>
                     <a href="https://www.linkedin.com/in/gage-payne-2765a1141/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="mailto:gage_payne37@yahoo.com" target="_blank"><i class="fas fa-envelope"></i></a>
                 </div>
+            </center>
             </div>
             <div class="col-3"></div>
         </div>
     </div>
     <div class="break"></div>
     <div class="bg" id="about">
-        
+        <div id="myCircle" class="circle"></div>
+        <div id="myCircle2" class="circle"></div>        
+        <div class="row" style="height: 15%"></div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5">
+                    
+                    
+                <div class="row" style="height: 17%; "></div>                    
+                <div class="quote">
+                    <h2 class="verse">
+                        "Whatever you do, 
+                        work at it with all your heart, 
+                        as working for the Lord, 
+                        not for human masters" 
+                    </h2>
+                    <h4>
+                        -Colossians 3:23
+                    </h4>
+                </div>
+            </div>
+                
+            <div class="col-1">
+                    
+                
+            </div>
+            <!--
+            <div class="col-2 centerIcon">sdgjask;jegd
+                <div style="height: 300px;"></div>
+                <div class="row">
+                    <i class="fab fa-js block"></i> 
+                </div>
+                <div class="row">
+                    <i class="fab fa-html5 block"></i>
+                    <i class="fab fa-css3-alt block"></i>
+                </div>
+                zsdgaseg
+                <div class="row">
+                    <i class="fab fa-python block"></i>
+                </div>
+            </div>
+        -->
+            <div class="col-4">
+                <div class="aboutBG">
+                <center><h2 style="text-decoration: underline;">About</h2>
+                    
+                <p> My name is Gage Payne and I am a student at Liberty University. 
+                    I am majoring in Computer Science with cognates in Cyber Security and Software Engineering and a minor in Mathematics. 
+                    I have a passion for using my programming abilities to glorify God and serve others. 
+                    I am most gifted with HTML, CSS, JavaScript, and Python. 
+                    When developing websites, I use the Bootstrap framework for rapid production of well designed and formatted information. 
+                    For web applications, I use the Django framework to make strong scalable applications quickly. 
+                    I love to learn new things and believe that one person should always be in the process of grasping something new. 
+                    If you would like to contact me about a project, please review my contact page and I would love to talk with you about it. 
+                    Have a blessed day! </p></center>
+                </div>
+                
+                
+            </div>
+
+            <div class="col-1"></div>
+        </div>
+        <div class="row text-center block">
+            <div class="col-3">
+                <i class="fab fa-js t"></i>
+            </div>
+            <div class="col-3">
+                <i class="fab fa-html5 t"></i>
+            </div>
+            <div class="col-3">
+                <i class="fab fa-css3-alt t"></i>
+            </div>
+            <div class="col-3">
+                <i class="fab fa-python t"></i>
+
+            </div>
+        </div>
     </div>
     <div class="break"></div>
     <div class="bg" id="projects">
@@ -84,6 +164,44 @@
                 scroll(change);
                 
             })
+            
+            function isScrolledIntoView(elem) {
+                var viewTop = $(window).scrollTop();
+                var viewBottom = viewTop + $(window).height();
+
+                var elemTop= $(elem).offset().top;
+                var elemBottom = elemTop + $(elem).height();
+
+                return ((elemBottom <= viewBottom) || (elemTop >= viewTop));
+            
+            }
+            
+            var document_height = $("#about").height();
+            
+            $(function () {
+                console.log(isScrolledIntoView($("#myCircle")));
+                $(window).scroll(function () {
+                    
+                    if ($(window).scrollTop() >= 150 && $(window).scrollTop() <=1400 && isScrolledIntoView("#myCircle2")) {
+                        var window_width = $(window).width() - $('#myCircle').width();
+                        var thing = document.getElementById("myCircle");
+                        var position = thing.getBoundingClientRect();
+                        var scroll_position = $(window).scrollTop() - 150;
+                        var object_position_left = window_width * (scroll_position / document_height);
+                        console.log($(window).scrollTop());
+                        
+                            $('#myCircle').css({
+                                'left': object_position_left
+                            });
+                            $('#myCircle2').css({
+                                'right': object_position_left
+                            });
+                        
+                // (object_position_left <= window_width * .89)) 
+            }
+                });
+            
+            });
         })
   </script>
 </body>

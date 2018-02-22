@@ -1,5 +1,6 @@
 body {
     font-family: 'Josefin Slab', serif;
+    color: #272d2d;
 }
 .nav {
     padding-top: 30px;
@@ -9,18 +10,24 @@ body {
 .nav a {
     color: #272d2d;
 }
+ul {
+    list-style-position: inside;
+}
 #home {
     background-color: #Edf5fc;
 }
 #about {
     background-color: #B8c5d6;
+    position: relative;
 }
 #projects {
-    background-color:#a39ba8;
+    background-color:#Edf5fc;
 }
+/*#a39ba8;*/
 #contact {
-    background-color: #23ce6b;
+    background-color: #B8c5d6;
 }
+/*#23ce6b*/
 .nav-pills .nav-link.active,.nav-pills .show > .nav-link {
     background-color: rgba(217, 223, 238, 0.1);
     color: #272d2d;
@@ -30,12 +37,12 @@ body {
 }
 .bg {
     height: 800px;
+    
 }
 
 .break {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
     height: 50px;
+    background: linear-gradient(white, rgb(242, 242, 242));
 }
 
 @keyframes first {
@@ -71,3 +78,104 @@ div.social-media a {
 div.social-media a:hover {
     color: #272d2d;
 }
+.title {
+    font-weight: bold;
+    padding-top: 30px;
+}
+.block {
+    font-size: 130px;
+    letter-spacing: 300px;
+    padding-top: 20px;
+}
+
+.centerIcon {
+    text-align: center;
+}
+ul {
+    padding: 0;
+}
+.verse {
+    font-size: 50px;
+}
+
+.test {
+    background-image: url("static/curls.png");
+    
+}
+
+.aboutBG{
+    
+    padding: 10px;
+    
+}
+
+.rectangle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    right:0;
+}
+
+.change3 {
+    position: absolute;
+    bottom: 35%;
+    right: 11%; 
+    height: 3px; 
+    width: 35%;
+    background-color: #272d2d;
+}
+
+.change1 {
+    position: absolute;
+    top: 15%;
+    left: 14%;
+    height: 3px; 
+    width: 40%; 
+    background-color: #272d2d; 
+}
+.change2 {
+    position: absolute;
+    right: 46%; 
+    top:15%;
+    height: 50%; 
+    width: 3px; 
+    background-color: #272d2d;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+@-webkit-keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.circle {
+    background: #272d2d;
+    display: block;
+    position: absolute;
+    top: 10%;
+    margin: 0;
+    border-radius: 5%;
+    height: 20px;
+    width: 20px;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+html,body
+{
+    overflow-x: hidden; 
+}
+
