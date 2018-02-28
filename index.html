@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body data-spy="scroll" data-target=".nav" data-offset="30">
+<body data-spy="scroll" data-target=".nav" data-offset="20">
 
     <ul class="nav text-left nav-pills fixed-top" role="tablist">
         <li class="nav-item">
@@ -42,6 +42,7 @@
             <div class="col-3"></div>
             <div class="col-6">
                 <center>
+                    
                 <h1>Gage Payne</h1>
             
                 <ul id="description">
@@ -124,6 +125,7 @@
 
             <div class="col-1"></div>
         </div>
+        
         <div class="row text-center block">
             <div class="col-3">
                 <i class="fab fa-js t"></i>
@@ -176,7 +178,7 @@
             
             }
             
-            var document_height = $("#about").height();
+            var document_height = $("#about").height() + $("#about").height();
             
             $(function () {
                 console.log(isScrolledIntoView($("#myCircle")));
@@ -194,6 +196,12 @@
                                 'left': object_position_left
                             });
                             $('#myCircle2').css({
+                                'right': object_position_left
+                            });
+                            $('#myCircle3').css({
+                                'left': object_position_left
+                            });
+                            $('#myCircle4').css({
                                 'right': object_position_left
                             });
                         

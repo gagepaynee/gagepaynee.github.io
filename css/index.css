@@ -27,13 +27,31 @@ ul {
 #contact {
     background-color: #B8c5d6;
 }
+.navbar-default .navbar-nav > li > a:hover {
+    color: #23ce6b;
+}
 /*#23ce6b*/
-.nav-pills .nav-link.active,.nav-pills .show > .nav-link {
+
+.nav a {
+    color: #272d2d;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 0;
+}
+.nav a:hover {
+    border-bottom: 3px solid;
+    border-color: #23ce6b;
+    color: #272d2d;
+    border-radius: 0;
+}
+.nav-pills .nav-link.active, .show > .nav-link {
     background-color: rgba(217, 223, 238, 0.1);
     color: #272d2d;
-    -webkit-transition: 1s; /* Safari */
-    transition: 1s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0;
+    border-bottom: 3px solid;
+    border-color: #23ce6b;
+    
 }
 .bg {
     padding-top: 250px;
@@ -171,6 +189,20 @@ ul {
     display: block;
     position: absolute;
     top: 10%;
+    margin: 0;
+    border-radius: 5%;
+    height: 20px;
+    width: 20px;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.circle2 {
+    background: #272d2d;
+    display: block;
+    position: absolute;
+    top: 70%;
     margin: 0;
     border-radius: 5%;
     height: 20px;
