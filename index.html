@@ -12,205 +12,107 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet"> 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
-<body data-spy="scroll" data-target=".nav" data-offset="20">
-
-    <ul class="nav text-left nav-pills fixed-top" role="tablist">
-        <li class="nav-item">
-            <a id="homenav" class="nav-link active" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-            <a id="aboutnav" class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-            <a id="projectsnav" class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-            <a id="contactnav" class="nav-link" href="#contact">Contact</a>
-        </li>
-    </ul> 
-
-
-    
-    <div class="bg" id="home">
-        <div class="row" style="height: 30%"></div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <center>
-                    
-                <h1>Gage Payne</h1>
-            
-                <ul id="description">
+<body>
+    <div id="sidebar">
+        <a id="homeLogo" href="#"><i class="fas fa-home"></i></a>
+        <a id="aboutLogo" href="#"><i class="fas fa-comment-alt"></i></a>
+        <a id="projectLogo" href="#"><i class="fas fa-laptop"></i></a>
+        <a id="thankLogo" href="#"><i class="fas fa-heart"></i></a>
+    </div>
+    <div id="home" >
+        <div class="homedetails">
+            <p class="homename">Gage<br>Payne</p>
+            <div class="hometext">
+                <ul class="homelist">
                     <li>Software Engineer</li>
-                    <li>Web Developer</li>
+                    <li>Website Developer</li>
+                    <li>Web Application Developer</li>
                 </ul>
-        
-                <hr>
-                <div class="social-media">
-                    <a href="https://github.com/gagepaynee" target="_blank"><i class="fab fa-github-square"></i></a>
-                    <a href="https://www.linkedin.com/in/gage-payne-2765a1141/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:gage_payne37@yahoo.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                </div>
-            </center>
-            </div>
-            <div class="col-3"></div>
-        </div>
-    </div>
-    <div class="break"></div>
-    <div class="bg2" id="about">
-        <div id="myCircle" class="circle"></div>
-        <div id="myCircle2" class="circle"></div>        
-        <div class="row" style="height: 15%"></div>
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-5">
-                    
-                    
-                <div class="row" style="height: 17%; "></div>                    
-                <div class="quote">
-                    <h2 class="verse">
-                        "Whatever you do, 
-                        work at it with all your heart, 
-                        as working for the Lord, 
-                        not for human masters" 
-                    </h2>
-                    <h4>
-                        -Colossians 3:23
-                    </h4>
-                </div>
-            </div>
-                
-            <div class="col-1">
-                    
-                
-            </div>
-            <!--
-            <div class="col-2 centerIcon">sdgjask;jegd
-                <div style="height: 300px;"></div>
-                <div class="row">
-                    <i class="fab fa-js block"></i> 
-                </div>
-                <div class="row">
-                    <i class="fab fa-html5 block"></i>
-                    <i class="fab fa-css3-alt block"></i>
-                </div>
-                zsdgaseg
-                <div class="row">
-                    <i class="fab fa-python block"></i>
-                </div>
-            </div>
-        -->
-            <div class="col-4">
-                <div class="aboutBG">
-                <center><h2 style="text-decoration: underline;">About</h2>
-                    
-                <p> My name is Gage Payne and I am a student at Liberty University. 
-                    I am majoring in Computer Science with cognates in Cyber Security and Software Engineering and a minor in Mathematics. 
-                    I have a passion for using my programming abilities to glorify God and serve others. 
-                    I am most gifted with HTML, CSS, JavaScript, and Python. 
-                    When developing websites, I use the Bootstrap framework for rapid production of well designed and formatted information. 
-                    For web applications, I use the Django framework to make strong scalable applications quickly. 
-                    I love to learn new things and believe that one person should always be in the process of grasping something new. 
-                    If you would like to contact me about a project, please review my contact page and I would love to talk with you about it. 
-                    Have a blessed day! </p></center>
-                </div>
-                
-                
-            </div>
-
-            <div class="col-1"></div>
-        </div>
-        
-        <div class="row text-center block">
-            <div class="col-3">
-                <i class="fab fa-js t"></i>
-            </div>
-            <div class="col-3">
-                <i class="fab fa-html5 t"></i>
-            </div>
-            <div class="col-3">
-                <i class="fab fa-css3-alt t"></i>
-            </div>
-            <div class="col-3">
-                <i class="fab fa-python t"></i>
-
             </div>
         </div>
     </div>
-    <div class="break"></div>
-    <div class="bg" id="projects">
-        
-    </div>
-    <div class="break"></div>
-    <div class="bg" id="contact">
-        
-    </div>
-  <script>
-        $(document).ready(function () {
-            function scroll(a) {
-                $('html, body').animate({
-                    'scrollTop': $(a).offset().top - ($(window).height() - $(a).outerHeight(true) ) / 2
-                }, 1500);
-                return false;
-            }
-
-            $(".nav-link").click(function()
-            {
-                clickedID = $(this).attr("id");
-                change = "#" + (clickedID.slice(0,-3));
-                scroll(change);
-                
-            })
-            
-            function isScrolledIntoView(elem) {
-                var viewTop = $(window).scrollTop();
-                var viewBottom = viewTop + $(window).height();
-
-                var elemTop= $(elem).offset().top;
-                var elemBottom = elemTop + $(elem).height();
-
-                return ((elemBottom <= viewBottom) || (elemTop >= viewTop));
-            
-            }
-            
-            var document_height = $("#about").height() + $("#about").height();
-            
-            $(function () {
-                console.log(isScrolledIntoView($("#myCircle")));
-                $(window).scroll(function () {
+    <div id="about" >
+        <div class="aboutdetails">
+            <div class="aboutrow">
+                <div id="quote" class="aboutquarter">
+                    <div class="quotedetails">
+                        <p style="margin-bottom: 0; text-align: center;">
+                            "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters"
+                        </p>
+                        <p style="font-size: 2vw; text-align:center;">
+                            -Colossians 3:23
+                        </p>
+                    </div>
+                </div>
+                <div id="space" class="aboutquarter">
                     
-                    if ($(window).scrollTop() >= 150 && $(window).scrollTop() <=1400 && isScrolledIntoView("#myCircle2")) {
-                        var window_width = $(window).width() - $('#myCircle').width();
-                        var thing = document.getElementById("myCircle");
-                        var position = thing.getBoundingClientRect();
-                        var scroll_position = $(window).scrollTop() - 150;
-                        var object_position_left = window_width * (scroll_position / document_height);
-                        console.log($(window).scrollTop());
-                        
-                            $('#myCircle').css({
-                                'left': object_position_left
-                            });
-                            $('#myCircle2').css({
-                                'right': object_position_left
-                            });
-                            $('#myCircle3').css({
-                                'left': object_position_left
-                            });
-                            $('#myCircle4').css({
-                                'right': object_position_left
-                            });
-                        
-                // (object_position_left <= window_width * .89)) 
-            }
+                </div>
+            </div>
+            <div class="aboutrow">
+                <div id="icons" class="aboutquarter">
+
+                </div>
+                <div id="languages" class="aboutquarter">
+                    <div class="languagedetail">
+                        <ul class="languagelist">
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                        <ul class="languagelist">
+                            <li>SQLite</li>
+                            <li>Django</li>
+                            <li>Git/GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+            $(function(){
+                $(window).scroll(function() {
+                    var scroll = $(window).scrollTop();
+                    var os = $('#home').offset().top;
+                    var ht = $('#home').height();
+                    ht1 = 1.85 * (ht / 3);
+                    ht2 = 1.6 * (ht / 3);
+                    ht3 = 1.35 * (ht / 3);
+                    ht4 = 1.1 * (ht / 3);
+                    if(scroll > os + ht1){
+                        $('#homeLogo').addClass('blue');
+                    }
+                    if(scroll < ht1){
+                        $('#homeLogo').removeClass('blue');
+                    }
+                    if(scroll > ht2){
+                        $('#aboutLogo').addClass('blue');
+                    }
+                    if(scroll < ht2){
+                        $('#aboutLogo').removeClass('blue');
+                    }
+                    if(scroll > ht3){
+                        $('#projectLogo').addClass('blue');
+                    }
+                    if(scroll < ht3){
+                        $('#projectLogo').removeClass('blue');
+                    }
+                    if(scroll > ht4){
+                        $('#thankLogo').addClass('blue');
+                    }
+                    if(scroll < ht4){
+                        $('#thankLogo').removeClass('blue');
+                    }
                 });
-            
             });
-        })
-  </script>
+    </script>
 </body>
 </html>
