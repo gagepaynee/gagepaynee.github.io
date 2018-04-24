@@ -6,6 +6,10 @@ html, body {
     position: relative;
 
 }
+.image {
+    height: 30vw;
+    width: 55vw;
+}
 #sidebar {
     position: fixed;
     width: 50px;
@@ -79,6 +83,14 @@ html, body {
     height: 20vw;
     width: 35vw;
 }
+.aboutquarter2 {
+    position: absolute;
+    height: 20vw;
+    width: 25vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 #quote {
     border-bottom: 2px solid #c4e8ef;
     border-right: 2px solid #c4e8ef;
@@ -109,8 +121,8 @@ html, body {
 }
 .languagelist {
     list-style-type: none;
-    font-size: 2.4vw;
-    line-height: 3.4vw;
+    font-size: 10vw;
+    line-height: 2vw;
 }
 #space {
     border-left: 2px solid #c4e8ef;
@@ -124,6 +136,58 @@ html, body {
 .aboutrow {
     display: flex;
 }
+
+#projects {
+    background-color: #c4e8ef; 
+    height: 100%; 
+    width: 100%;
+    font-size: 8vw;
+    line-height: 8vw;
+    color: #004385;
+    font-family: 'Archivo Narrow', sans-serif;  
+    position: relative;  
+}
+.projecttitle {
+    position: absolute;
+    font-size: 6vw;
+    margin-top: 2vw;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 10px;
+}
+.carousel {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay {
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color: black;
+}
+.left-icon {
+    font-size: 3vw;
+    color: #004385;
+}
+.left-icon:hover {
+    color: #013c74;
+}
+.right-icon {
+    font-size: 3vw;    
+    color: #004385;
+}
+.right-icon:hover {
+    color: #013c74;
+}
+
+.carousel-indicators li{
+    background-color: #c4e8ef;
+}
+.carousel-indicators .active {
+    background-color: #004385;
+}
 #homeLogo.blue {
     color: #00B2EE;
 }
@@ -135,4 +199,16 @@ html, body {
 }
 #thankLogo.blue {
     color: #00B2EE;
+}
+#homeLogo.blue2 {
+    color: #004385;
+}
+#aboutLogo.blue2 {
+    color: #004385;
+}
+#projectLogo.blue2 {
+    color: #004385;
+}
+#thankLogo.blue2 {
+    color: #004385;
 }
