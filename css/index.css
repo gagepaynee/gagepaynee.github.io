@@ -6,6 +6,7 @@ html, body {
     position: relative;
 
 }
+
 .image {
     height: 30vw;
     width: 55vw;
@@ -25,7 +26,7 @@ html, body {
     color: white;
 }
 #home {
-    background-color: #00B2EE; 
+    background-color: #004385; 
     height: 100%; 
     width: 100%;
     font-size: 8vw;
@@ -64,130 +65,63 @@ html, body {
 }
 #about {
     background-color: white; 
-    height: 100%; 
-    width: 100%;
-    font-size: 8vw;
-    line-height: 8vw;
     color: #004385;
     font-family: 'Archivo Narrow', sans-serif;  
     position: relative;  
 }
-.aboutdetails {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);    
+#mypic {
+    display: block;
+    height: 120px;
+    margin: auto;
 }
-.aboutquarter {
-    position: relative;
-    height: 20vw;
-    width: 35vw;
+.aboutquote {
+    font-size: 40px;
+    text-align: center;    
 }
-.aboutquarter2 {
-    position: absolute;
-    height: 20vw;
-    width: 25vw;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.borderRight {
+    border-right: #004385 1px solid;
 }
-#quote {
-    border-bottom: 2px solid #c4e8ef;
-    border-right: 2px solid #c4e8ef;
-    font-size: 3vw;
-    line-height: 3.5vw;
+h2 {
+    font-size: 40px;
+    margin-bottom: 3px;  
+    font-weight: bold;  
 }
-.quotedetails {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 90%;
-    width: 100%;
+h4 {
+    font-size: 20px;
+    margin-bottom: 3px;
 }
-#languages {
-    border-top: 2px solid #c4e8ef;
-    border-left: 2px solid #c4e8ef;
+.bodytext {
+    font-size: 18px;
+    padding: 10px;
 }
-.languagedetail {
-    position: absolute;
-    display: flex;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 90%;
-    width: 100%;
-    text-align: center;
-}
-.languagelist {
-    list-style-type: none;
-    font-size: 10vw;
-    line-height: 2vw;
-}
-#space {
-    border-left: 2px solid #c4e8ef;
-    border-bottom: 2px solid #c4e8ef;    
-}
-#icons {
-    border-top: 2px solid #c4e8ef;
-    border-right: 2px solid #c4e8ef;
-    
-}
-.aboutrow {
-    display: flex;
-}
-
-#projects {
-    background-color: #c4e8ef; 
-    height: 100%; 
-    width: 100%;
-    font-size: 8vw;
-    line-height: 8vw;
-    color: #004385;
+#contact {
+    background-color: #FF6663; 
+    color: white;
     font-family: 'Archivo Narrow', sans-serif;  
     position: relative;  
 }
-.projecttitle {
-    position: absolute;
-    font-size: 6vw;
-    margin-top: 2vw;
-    left: 50%;
-    transform: translateX(-50%);
-    letter-spacing: 10px;
+.contactIcons {
+    margin-bottom: 3px;
 }
-.carousel {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.contactIcons a {
+    color: white;
+    font-size: 26px;
 }
-.overlay {
-    height: 100%;
-    width: 100%;
-    z-index: 3;
-    background-color: black;
+.contactIcons a:hover {
+    color: rgb(213, 216, 218);
 }
-.left-icon {
-    font-size: 3vw;
-    color: #004385;
+.email {
+    color:white;
 }
-.left-icon:hover {
-    color: #013c74;
+.email:hover {
+    color:rgb(213, 216, 218);
+    text-decoration: none;
 }
-.right-icon {
-    font-size: 3vw;    
-    color: #004385;
-}
-.right-icon:hover {
-    color: #013c74;
+.sayhi {
+    margin-bottom: 0;
+    margin-top: 50px;
 }
 
-.carousel-indicators li{
-    background-color: #c4e8ef;
-}
-.carousel-indicators .active {
-    background-color: #004385;
-}
 #homeLogo.blue {
     color: #00B2EE;
 }
