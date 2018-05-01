@@ -72,10 +72,43 @@
             </div>            
             <div class="col-md-1"></div>            
         </div>
-        <div class="row" style="height: 25px;"></div>        
+        <div class="row" style="height: 25px;"></div>  
     </div>
-    <div id="projects" >
-        
+    <div id="project1" >
+        <div class="row" style="height: 100px;"></div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <div class="projectText">
+                    <p class="company">Liberty University<br>School of Engineering</p>
+                    <p class="title">Kiosk App</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid screen" src="static/kioskapp.png" alt="kioskapp">
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" style="height: 100px;"></div>
+
+    </div>
+    <div id="project2" >
+        <div class="row" style="height: 100px;"></div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <img class="img-fluid screen" src="static/enn.png" alt="kioskapp">
+            </div>
+            <div class="col-md-4">
+                <div class="projectText">
+                    <p class="company">Exposure News<br>Network</p>
+                    <p class="title">Web Application</p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row" style="height: 100px;"></div>
+
     </div>
     <div id="contact">
         <div class="row">
@@ -95,64 +128,77 @@
             $(function(){
                 $(window).scroll(function() {
                     var scroll = $(window).scrollTop();
-                    var os = $('#home').offset().top;
-                    var ht = $('#home').height();
-                    ht1 = 1.85 * (ht / 3);
-                    ht2 = 1.6 * (ht / 3);
-                    ht3 = 1.35 * (ht / 3);
-                    ht4 = 1.1 * (ht / 3);
-                    if(scroll > os + ht1){
+                    var homeLTop = $('#homeLogo').offset().top - scroll;
+                    var aboutLTop = $('#aboutLogo').offset().top - scroll;
+                    var projectLTop = $('#projectLogo').offset().top - scroll;
+                    var thankLTop = $('#thankLogo').offset().top - scroll;
+                    var homeHeight = $('#home').height();
+                    var aboutHeight = $('#about').height();
+                    var project1Height = $('#project1').height();
+                    var project2Height = $('#project2').height();
+                    var homeSwitcher1 = (homeHeight - homeLTop) - 20;
+                    var homeSwitcher2 = ((homeHeight+aboutHeight) - homeLTop) - 20;
+                    var homeSwitcher3 = ((homeHeight+aboutHeight+project1Height) - homeLTop) - 20;
+                    var aboutSwitcher1 = (homeHeight - aboutLTop) - 20;
+                    var aboutSwitcher2 = ((homeHeight+aboutHeight) - aboutLTop) - 20;
+                    var aboutSwitcher3 = ((homeHeight+aboutHeight+project1Height) - aboutLTop) - 20;
+                    var projectSwitcher1 = (homeHeight - projectLTop) - 20;
+                    var projectSwitcher2 = ((homeHeight+aboutHeight) - projectLTop) - 20;
+                    var projectSwitcher3 = ((homeHeight+aboutHeight+project1Height) - projectLTop) - 20;
+                    var thankSwitcher1 = (homeHeight - thankLTop) - 20;
+                    var thankSwitcher2 = ((homeHeight+aboutHeight) - thankLTop) - 20;
+                    var thankSwitcher3 = ((homeHeight+aboutHeight+project1Height) - thankLTop) - 20;
+
+                    console.log(homeSwitcher1, scroll)
+                    if(scroll > homeSwitcher1){
                         $('#homeLogo').addClass('blue');
                     }
-                    if(scroll < ht1){
+                    if(scroll < homeSwitcher1){
                         $('#homeLogo').removeClass('blue');
                     }
-                    if(scroll > ht+ht1){
+                    if(scroll > homeSwitcher2){
                         $('#homeLogo').removeClass('blue');
-                        $('#homeLogo').addClass('blue2');
                     }
-                    if(scroll < ht+ht1){
-                        $('#homeLogo').removeClass('blue2');
+                    if(scroll > homeSwitcher3){
+                        $('#homeLogo').addClass('blue');
                     }
-                    if(scroll > ht2){
+                    if(scroll > aboutSwitcher1){
                         $('#aboutLogo').addClass('blue');
                     }
-                    if(scroll < ht2){
+                    if(scroll < aboutSwitcher1){
                         $('#aboutLogo').removeClass('blue');
                     }
-                    if(scroll > ht + ht2){
+                    if(scroll > aboutSwitcher2){
                         $('#aboutLogo').removeClass('blue');
-                        $('#aboutLogo').addClass('blue2');
                     }
-                    if(scroll < ht + ht2){
-                        $('#aboutLogo').removeClass('blue2');
+                    if(scroll > aboutSwitcher3){
+                        $('#aboutLogo').addClass('blue');
                     }
-                    if(scroll > ht3){
+                    if(scroll > projectSwitcher1){
                         $('#projectLogo').addClass('blue');
                     }
-                    if(scroll < ht3){
+                    if(scroll < projectSwitcher1){
                         $('#projectLogo').removeClass('blue');
                     }
-                    if(scroll > ht + ht3){
+                    if(scroll > projectSwitcher2){
                         $('#projectLogo').removeClass('blue');
-                        $('#projectLogo').addClass('blue2');
                     }
-                    if(scroll < ht + ht3){
-                        $('#projectLogo').removeClass('blue2');
+                    if(scroll > projectSwitcher3){
+                        $('#projectLogo').addClass('blue');
                     }
-                    if(scroll > ht4){
+                    if(scroll > thankSwitcher1){
                         $('#thankLogo').addClass('blue');
                     }
-                    if(scroll < ht4){
+                    if(scroll < thankSwitcher1){
                         $('#thankLogo').removeClass('blue');
                     }
-                    if(scroll > ht + ht4){
+                    if(scroll > thankSwitcher2){
                         $('#thankLogo').removeClass('blue');
-                        $('#thankLogo').addClass('blue2'); 
                     }
-                    if(scroll < ht + ht4){
-                        $('#thankLogo').removeClass('blue2');
+                    if(scroll > thankSwitcher3){
+                        $('#thankLogo').addClass('blue');
                     }
+                    
                 });
             });
     </script>

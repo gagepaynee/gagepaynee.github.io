@@ -6,7 +6,10 @@ html, body {
     position: relative;
 
 }
-
+.row {
+    margin: 0;
+    padding: 0;
+}
 .image {
     height: 30vw;
     width: 55vw;
@@ -94,6 +97,35 @@ h4 {
     font-size: 18px;
     padding: 10px;
 }
+#project1 {
+    background-color: #00B2EE; 
+    color: white;
+    font-family: 'Archivo Narrow', sans-serif;  
+    position: relative;  
+}
+#project2 {
+    background-color: white; 
+    color: #004385;
+    font-family: 'Archivo Narrow', sans-serif;  
+    position: relative;  
+}
+.projectText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.screen {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.company {
+    font-size: 18px;
+}
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 45px;
+}
 #contact {
     background-color: #FF6663; 
     color: white;
@@ -123,16 +155,16 @@ h4 {
 }
 
 #homeLogo.blue {
-    color: #00B2EE;
+    color: #004385;
 }
 #aboutLogo.blue {
-    color: #00B2EE;
+    color: #004385;
 }
 #projectLogo.blue {
-    color: #00B2EE;
+    color: #004385;
 }
 #thankLogo.blue {
-    color: #00B2EE;
+    color: #004385;
 }
 #homeLogo.blue2 {
     color: #004385;
