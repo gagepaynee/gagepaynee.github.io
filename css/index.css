@@ -14,19 +14,16 @@ html, body {
 }
 
 @media (min-width: 768px) { 
-    .borderRight {
-        border-right: #004385 1px solid;
-    }
     .removeSide {
         visibility: visible;
     }
     p.company {
-        font-size: 18px;
+        font-size: 20px;
         text-align: left;
 
     }
     p.title {
-        font-size: 50px;
+        font-size: 70px;
         font-weight: bold;
         line-height: 45px;
         text-align: left;
@@ -64,7 +61,9 @@ html, body {
 }
 
 @media (min-width: 992px) { 
-    
+    .borderRight {
+        border-right: #004385 1px solid;
+    }
 }
 
 @media (min-width: 1200px) { 
