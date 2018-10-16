@@ -12,17 +12,17 @@
 }
 
 .white {
-    color: white;
+    color: #eaebed;
 }
 
 .blue {
-    color: #004385;
+    color: black;
 }
 
 /*Home Styling*/
 #home {
     background-color: #004385;
-    color: white;
+    color: #eaebed;
     display: flex;
     justify-content: center;
     height: 100%;
@@ -41,6 +41,7 @@
     text-align: right;
     display: flex;
     position: relative;
+    float: right;
 }
 
 #nameId {
@@ -50,8 +51,9 @@
 }
 
 .middleBar {
-    background-color: white;
+    background-color: #eaebed;
     width: 5px;
+    height: 250px;
     margin: 0 10px;
 }
 
@@ -89,7 +91,7 @@
     align-items: center;
     justify-content: center;
     padding: 60px 0;
-    color: #004385;
+    color: black;
 }
 
 .picOfMe {
@@ -140,8 +142,8 @@
 }
 
 #attribute2 {
-    border-right: 2px #004385 solid;
-    border-left: 2px #004385 solid;
+    border-right: 2px black solid;
+    border-left: 2px black solid;
 }
 
 /*Projects Styling*/
@@ -153,18 +155,18 @@
 }
 
 #project1 {
-    background-color: #00B2EE;
+    background-color: #3e78b2;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 40px 0;
-    color: white;
+    color: #eaebed;
 }
 
 #project2 {
-    background-color: white;
+    background-color: #eaebed;
     height: 100%;
     width: 100%;
     display: flex;
@@ -243,7 +245,7 @@
     margin-bottom: 20px;
     margin-left: -8px;
     font-size: 7em;
-    color: white;
+    color: #eaebed;
 }
 
 .downIcon {
@@ -260,9 +262,9 @@
     display: flex;
     height: 25%;
     width: 100%;
-    background-color: #FF6663;
+    background-color: #006989;
     justify-content: center;
-    color: white;
+    color: #eaebed;
     padding: 20px 0;
 }
 
@@ -278,7 +280,7 @@
 }
 
 .contactContainer a {
-    color: white;
+    color: #eaebed;
     text-decoration: none;
 }
 
@@ -290,17 +292,35 @@
     padding: 5px;
 }
 
-@media all and (max-width: 1690px) {}
+@media all and (max-width: 1690px) {
+
+    /*Landing page*/
+    .myName {
+        font-size: 7em;
+    }
+
+    .myTitles h2 {
+        font-size: 4em;
+    }
+
+    .middleBar {
+        height: 225px;
+    }
+}
 
 @media all and (max-width: 1280px) {
 
     /*Landing page*/
-    .myName h1 {
+    .myName {
         font-size: 6em;
     }
 
     .myTitles h2 {
         font-size: 3.5em;
+    }
+
+    .middleBar {
+        height: 200px;
     }
 
     /*About page*/
