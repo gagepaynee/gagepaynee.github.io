@@ -26,8 +26,9 @@ $(function () {
         var switcher1 = (homeHeight - top) - 20;
         var switcher2 = ((homeHeight + aboutHeight) - top) - 20;
         var switcher3 = ((homeHeight + aboutHeight + project1Height) - top) - 20;
+        var switcher4 = ((homeHeight + aboutHeight + project1Height + project2Height) - top) - 20;
 
-        if ((scroll > switcher1 && scroll < switcher2) || scroll > switcher3) {
+        if ((scroll > switcher1 && scroll < switcher2) || (scroll > switcher3 && scroll < switcher4)) {
             logo.addClass('blue');
         } else {
             logo.removeClass('blue');
