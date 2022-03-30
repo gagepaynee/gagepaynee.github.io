@@ -14,6 +14,22 @@
         gtag('config', 'UA-120093400-1');
 
     </script>
+    
+    
+<script src="https://capstone-pizzarun.cs60.force.com/lightning/lightning.out.js"></script>
+<script>
+     $Lightning.use("c:pizzaRun", function() {
+        $Lightning.createComponent("c:screen", {},
+              "lightning",
+              function(cmp) {
+                console.log("LWC component was created");
+                // do some stuff
+              }
+          );
+        },
+       'https://capstone-pizzarun.cs60.force.com/'
+      );
+</script>
 
     <meta charset="utf-8">
 
@@ -51,6 +67,7 @@
 </head>
 
 <body>
+    <div id="lightning"></div>
     <div class="sidebar">
         <ul>
             <li>
@@ -70,7 +87,7 @@
     <div id="home">
         <div class="homeContent">
 
-            <h1 class="myName" id="nameId">Gage Payne Test</h1>
+            <h1 class="myName" id="nameId">Gage Payne</h1>
 
             <div class="middleBar"></div>
             <div class="myTitles">
